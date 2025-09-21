@@ -8,13 +8,12 @@ html {
 }
 
 .scroll-arrow-down {
-  position: sticky;
-  top: 98vh;
-  top: 98svh;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   animation: bounce 2s infinite;
   transition: all 0.3s ease-in-out;
   opacity: 1;
