@@ -18,6 +18,8 @@
 html,
 body {
   overflow-x: hidden;
+  height: 100vh;
+  height: 100dvh;
   scroll-behavior: smooth;
 }
 
