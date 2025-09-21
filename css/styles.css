@@ -38,7 +38,9 @@ p {
 
 .hero-image {
   width: 100dvw;
-  height: 100dvh;
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
   object-fit: cover;
   position: fixed;
   top: 0;
