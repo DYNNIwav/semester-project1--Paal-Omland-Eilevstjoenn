@@ -35,8 +35,14 @@
     <a href="#main-content" class="skip-link" tabindex="0"
       >Skip to main content</a
     >
-    <button class="hamburger-menu">
-      <i class="fa-solid fa-hamburger"></i>
+    <button
+      class="hamburger-menu"
+      tabindex="0"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="navbar"
+    >
+      <i class="fa-solid fa-hamburger" aria-hidden="true"></i>
     </button>
     <header>
       <div class="header-container">
@@ -61,39 +67,56 @@
               target="_blank"
               tabindex="0"
             >
-              <i class="fa-solid fa-location-dot"></i> <br />Storgata 123, 0182
-              Oslo
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <br />Storgata 123, 0182 Oslo
             </a>
           </p>
         </div>
         <div class="footer-container">
           <div class="footer-contact-container">
             <a href="mailto:info@vitenoslo.no" tabindex="0">
-              <i class="fa-solid fa-envelope"></i>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
               <p>info@vitenoslo.no</p>
             </a>
             <a href="tel:+4799999999" tabindex="0">
-              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
               <p>+47 999 99 999</p>
             </a>
           </div>
           <div class="social-media-container">
-            <a href="https://www.facebook.com/" target="_blank" tabindex="0"
-              ><i class="fa-brands fa-facebook"></i
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              tabindex="0"
+              aria-label="follow us on Facebook"
+              ><i class="fa-brands fa-facebook" aria-hidden="true"></i
             ></a>
-            <a href="https://www.instagram.com/" target="_blank" tabindex="0"
-              ><i class="fa-brands fa-instagram"></i
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              tabindex="0"
+              aria-label="follow us on Instagram"
+              ><i class="fa-brands fa-instagram" aria-hidden="true"></i
             ></a>
-            <a href="https://www.youtube.com/" target="_blank" tabindex="0"
-              ><i class="fa-brands fa-youtube"></i
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              tabindex="0"
+              aria-label="follow us on YouTube"
+              ><i class="fa-brands fa-youtube" aria-hidden="true"></i
             ></a>
-            <a href="https://www.tiktok.com/" target="_blank" tabindex="0"
-              ><i class="fa-brands fa-tiktok"></i
+            <a
+              href="https://www.tiktok.com/"
+              target="_blank"
+              tabindex="0"
+              aria-label="follow us on TikTok"
+              ><i class="fa-brands fa-tiktok" aria-hidden="true"></i
             ></a>
           </div>
           <div class="footer-info">
             <p>
-              <i class="fa-solid fa-copyright"></i> <br />2025 <br />
+              <i class="fa-solid fa-copyright" aria-hidden="true"></i>
+              <br />2025 <br />
               VitenOslo
             </p>
           </div>
@@ -108,38 +131,38 @@
           alt="background image with different museum elements"
         />
         <span class="scroll-arrow-down"
-          ><i class="fa-solid fa-arrow-down"></i
+          ><i class="fa-solid fa-arrow-down" aria-hidden="true"></i
         ></span>
         <div class="title-container" aria-label="Våre utstillingar">
           <h1>Våre utstillingar</h1>
         </div>
         <div class="exhibition-container">
           <div class="exhibition-card" aria-label="Stjernereisen">
-            <i class="fa-solid fa-rocket"></i>
+            <i class="fa-solid fa-rocket" aria-hidden="true"></i>
             <h2>Stjernereisen</h2>
             <p>Galaksar, planetar og mysterium i universet</p>
             <a href="#section2" tabindex="0">Les meir</a>
           </div>
           <div class="exhibition-card" aria-label="Livets tre">
-            <i class="fa-solid fa-tree"></i>
+            <i class="fa-solid fa-tree" aria-hidden="true"></i>
             <h2>Livets tre</h2>
             <p>Frå urceller til deg – historia om korleis livet utvikla seg</p>
             <a href="#section3" tabindex="0">Les meir</a>
           </div>
           <div class="exhibition-card" aria-label="Kroppslabaratoriet">
-            <i class="fa-solid fa-bone"></i>
+            <i class="fa-solid fa-bone" aria-hidden="true"></i>
             <h2>Kroppslabaratoriet</h2>
             <p>Slik fungerer kroppen – frå celler til førstehjelp</p>
             <a href="#section4" tabindex="0">Les meir</a>
           </div>
           <div class="exhibition-card" aria-label="RoboLab">
-            <i class="fa-solid fa-robot"></i>
+            <i class="fa-solid fa-robot" aria-hidden="true"></i>
             <h2>RoboLab</h2>
             <p>Smarte maskiner, store ideer</p>
             <a href="#section5" tabindex="0">Les meir</a>
           </div>
           <div class="exhibition-card" aria-label="Natur i balanse">
-            <i class="fa-solid fa-leaf"></i>
+            <i class="fa-solid fa-leaf" aria-hidden="true"></i>
             <h2>Natur i balanse</h2>
             <p>Livets nett – frå pollinatorer til planar for framtida</p>
             <a href="#section6" tabindex="0">Les meir</a>
@@ -155,7 +178,9 @@
         />
         <div class="stjernereisen-container">
           <div class="exhibition-stjernereisen">
-            <h2>Stjernereisen<i class="fa-solid fa-rocket"></i></h2>
+            <h2>
+              Stjernereisen<i class="fa-solid fa-rocket" aria-hidden="true"></i>
+            </h2>
             <p>
               Bli med på Stjernereisen – en leken og lærerik utstilling der hele
               familien kan utforske verdensrommet sammen! Her kan barn styre sin
@@ -178,7 +203,9 @@
             loading="lazy"
           />
           <div class="exhibition-livets-tre">
-            <h2>Livets tre<i class="fa-solid fa-tree"></i></h2>
+            <h2>
+              Livets tre<i class="fa-solid fa-tree" aria-hidden="true"></i>
+            </h2>
             <p>
               Velkomen til Livets tre! I denne utstillinga kan barn og foreldre
               følgje spora tilbake til jordas tidlege liv. Sjå korleis små
@@ -196,7 +223,12 @@
       <section id="section4" class="section4">
         <div class="kroppslabaratoriet-container">
           <div class="exhibition-kroppslabaratoriet">
-            <h2>Kroppslabaratoriet<i class="fa-solid fa-bone"></i></h2>
+            <h2>
+              Kroppslabaratoriet<i
+                class="fa-solid fa-bone"
+                aria-hidden="true"
+              ></i>
+            </h2>
             <p>
               Oppdag kroppen på nært hald i Kroppslaboratoriet! Zoom inn på
               celler i mikroskop, pump blod med ein gigantisk “hjartemaskin”, og
@@ -225,7 +257,7 @@
             loading="lazy"
           />
           <div class="exhibition-robolab">
-            <h2>RoboLab<i class="fa-solid fa-robot"></i></h2>
+            <h2>RoboLab<i class="fa-solid fa-robot" aria-hidden="true"></i></h2>
             <p>
               Velkomen til RoboLab – der barn kan programmere sine første
               robotar og teste korleis kunstig intelligens “lærer”. Styr ein
@@ -243,7 +275,9 @@
       <section id="section6" class="section6">
         <div class="natur-i-balanse-container">
           <div class="exhibition-natur-i-balanse">
-            <h2>Natur i balanse<i class="fa-solid fa-leaf"></i></h2>
+            <h2>
+              Natur i balanse<i class="fa-solid fa-leaf" aria-hidden="true"></i>
+            </h2>
             <p>
               Utforsk økosystema våre i Natur i balanse! Bygg ei blomstereng for
               bier og sommarfuglar, test “matnett”-spelet og sjå korleis alt
