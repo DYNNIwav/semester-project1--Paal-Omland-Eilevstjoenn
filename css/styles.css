@@ -42,8 +42,6 @@ p {
   width: 100dvw;
   height: 100vh;
   height: 100dvh;
-  min-height: 100vh;
-  min-height: 100dvh;
   object-fit: cover;
   position: fixed;
   top: 0;
