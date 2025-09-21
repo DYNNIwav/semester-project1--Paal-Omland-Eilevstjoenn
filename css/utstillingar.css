@@ -567,6 +567,9 @@ html {
 }
 
 @media (max-width: 768px) {
+  .scroll-arrow-down {
+    display: none;
+  }
   .exhibition-container {
     grid-template-columns: 1fr;
     height: auto;
