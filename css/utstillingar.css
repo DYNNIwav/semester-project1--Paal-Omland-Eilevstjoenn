@@ -1,0 +1,670 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.background-image {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.scroll-arrow-down {
+  position: sticky;
+  top: 98dvh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bounce 2s infinite;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.scroll-arrow-down i {
+  font-size: 1.2rem;
+  color: var(--snow);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.section1 {
+  height: 100dvh;
+  width: 100dvw;
+  margin-bottom: 2rem;
+}
+
+.title-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30dvh;
+  width: 100dvw;
+}
+
+.title-container h1 {
+  color: var(--snow);
+  font-family: var(--font-family-heading);
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px
+    color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  background-color: color-mix(
+    in srgb,
+    var(--fjord-navy) 100%,
+    transparent 100%
+  );
+
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+}
+
+.exhibition-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 60dvw;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.exhibition-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25dvw;
+  height: auto;
+  background-color: color-mix(
+    in srgb,
+    var(--fjord-navy) 100%,
+    transparent 100%
+  );
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  color: var(--snow);
+}
+
+.exhibition-card i {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.exhibition-card h2 {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-family: var(--font-family-heading);
+}
+
+.exhibition-card p {
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  font-family: var(--font-family-body);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.exhibition-card a {
+  color: var(--snow);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  text-decoration: none;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  background-color: var(--aurora-coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  border: 1px solid
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+}
+
+.exhibition-card a:hover {
+  background-color: var(--snow);
+  color: var(--aurora-coral);
+  border: 1px solid color-mix(in srgb, var(--snow) 100%, transparent 100%);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.section2 {
+  height: 100dvh;
+  width: 100dvw;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--oslo-sky);
+}
+
+.background-image2 {
+  object-fit: cover;
+  width: 50dvw;
+  height: 100dvh;
+  position: absolute;
+  transform: scaleX(-1);
+  right: 0;
+}
+
+.exhibition-stjernereisen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  gap: 1rem;
+}
+
+.exhibition-stjernereisen i {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.exhibition-stjernereisen h2 {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  font-family: var(--font-family-heading);
+  margin-bottom: 1rem;
+  background-color: color-mix(
+    in srgb,
+    var(--fjord-navy) 100%,
+    transparent 100%
+  );
+  color: var(--snow);
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+}
+
+.exhibition-stjernereisen p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  max-width: 30dvw;
+  text-align: left;
+  font-family: var(--font-family-body);
+}
+
+.exhibition-stjernereisen a {
+  text-decoration: none;
+  color: var(--snow);
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  background-color: var(--aurora-coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  border: 1px solid
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+}
+
+.exhibition-stjernereisen a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  background-color: var(--snow);
+  color: var(--aurora-coral);
+  border: 1px solid color-mix(in srgb, var(--snow) 100%, transparent 100%);
+}
+.section3 {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: var(--oslo-sky);
+}
+
+.livets-tre-container {
+  position: relative;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.background-image3 {
+  position: relative;
+  object-fit: contain;
+  width: 50dvw;
+  height: 100dvh;
+  left: -100px;
+}
+
+.exhibition-livets-tre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.exhibition-livets-tre i {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.exhibition-livets-tre h2 {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  font-family: var(--font-family-heading);
+  margin-bottom: 1rem;
+  background-color: color-mix(
+    in srgb,
+    var(--fjord-navy) 100%,
+    transparent 100%
+  );
+  color: var(--snow);
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+}
+
+.exhibition-livets-tre p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  max-width: 30vw;
+  text-align: left;
+  font-family: var(--font-family-body);
+}
+
+.exhibition-livets-tre a {
+  text-decoration: none;
+  color: var(--snow);
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  background-color: var(--aurora-coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  border: 1px solid
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  transition: all 0.3s ease;
+}
+
+.exhibition-livets-tre a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  background-color: var(--snow);
+  color: var(--aurora-coral);
+  border: 1px solid color-mix(in srgb, var(--snow) 100%, transparent 100%);
+}
+
+.section4 {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--oslo-sky);
+}
+
+.kroppslabaratoriet-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.exhibition-kroppslabaratoriet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.background-image4 {
+  object-fit: cover;
+
+  position: relative;
+  width: 50dvw;
+  height: 100dvh;
+  right: 0;
+}
+.exhibition-kroppslabaratoriet i {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.exhibition-kroppslabaratoriet h2 {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  font-family: var(--font-family-heading);
+  margin-bottom: 1rem;
+  background-color: color-mix(
+    in srgb,
+    var(--fjord-navy) 100%,
+    transparent 100%
+  );
+  color: var(--snow);
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+}
+.exhibition-kroppslabaratoriet p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  max-width: 30vw;
+  text-align: left;
+  font-family: var(--font-family-body);
+}
+.exhibition-kroppslabaratoriet a {
+  text-decoration: none;
+  color: var(--snow);
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  background-color: var(--aurora-coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  border: 1px solid
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  transition: all 0.3s ease;
+}
+.exhibition-kroppslabaratoriet a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  background-color: var(--snow);
+  color: var(--aurora-coral);
+  border: 1px solid color-mix(in srgb, var(--snow) 100%, transparent 100%);
+}
+.section5 {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--oslo-sky);
+}
+.robolab-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+}
+.background-image5 {
+  object-fit: cover;
+  position: relative;
+  width: 50dvw;
+  height: 100dvh;
+}
+
+.exhibition-robolab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.exhibition-robolab i {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.exhibition-robolab h2 {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  font-family: var(--font-family-heading);
+  margin-bottom: 1rem;
+  background-color: color-mix(
+    in srgb,
+    var(--fjord-navy) 100%,
+    transparent 100%
+  );
+  color: var(--snow);
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+}
+.exhibition-robolab p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  max-width: 30vw;
+  text-align: left;
+  font-family: var(--font-family-body);
+}
+.exhibition-robolab a {
+  text-decoration: none;
+  color: var(--snow);
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  background-color: var(--aurora-coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  border: 1px solid
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  transition: all 0.3s ease;
+}
+.exhibition-robolab a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  background-color: var(--snow);
+  color: var(--aurora-coral);
+  border: 1px solid color-mix(in srgb, var(--snow) 100%, transparent 100%);
+}
+.section6 {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--oslo-sky);
+}
+.background-image6 {
+  object-fit: cover;
+  width: 50dvw;
+  height: 100dvh;
+  position: relative;
+
+  right: 0;
+}
+.natur-i-balanse-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.exhibition-natur-i-balanse {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.exhibition-natur-i-balanse i {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.exhibition-natur-i-balanse h2 {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  font-family: var(--font-family-heading);
+  margin-bottom: 1rem;
+  background-color: color-mix(
+    in srgb,
+    var(--fjord-navy) 100%,
+    transparent 100%
+  );
+  color: var(--snow);
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+}
+.exhibition-natur-i-balanse p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  max-width: 30vw;
+  text-align: left;
+  font-family: var(--font-family-body);
+}
+.exhibition-natur-i-balanse a {
+  text-decoration: none;
+  color: var(--snow);
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  background-color: var(--aurora-coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  border: 1px solid
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+}
+.exhibition-natur-i-balanse a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  background-color: var(--snow);
+  color: var(--aurora-coral);
+  border: 1px solid color-mix(in srgb, var(--snow) 100%, transparent 100%);
+}
+
+@media (min-aspect-ratio: 21/9) {
+  .background-image3,
+  .background-image4,
+  .background-image5,
+  .background-image6 {
+    object-fit: contain;
+
+    height: 100dvh;
+  }
+}
+
+@media (max-width: 768px) {
+  .exhibition-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100dvw;
+  }
+  .exhibition-card {
+    width: 80dvw;
+    height: auto;
+    margin: 0 auto 2rem auto;
+  }
+  .exhibition-card i {
+    font-size: 1.5rem;
+  }
+  .exhibition-card h2 {
+    font-size: 1.5rem;
+  }
+  .exhibition-card p {
+    font-size: 1rem;
+  }
+
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5,
+  .section6 {
+    height: auto;
+    width: 100dvw;
+
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background-image2,
+  .background-image3,
+  .background-image4,
+  .background-image5,
+  .background-image6 {
+    position: relative;
+    width: 100dvw;
+    height: 40dvh;
+    object-fit: contain;
+    transform: none;
+    order: -1;
+  }
+
+  .background-image3 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .natur-i-balanse-container,
+  .robolab-container,
+  .kroppslabaratoriet-container,
+  .livets-tre-container,
+  .stjernereisen-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100dvw;
+  }
+
+  .exhibition-stjernereisen,
+  .exhibition-livets-tre,
+  .exhibition-kroppslabaratoriet,
+  .exhibition-robolab,
+  .exhibition-natur-i-balanse {
+    height: auto;
+    width: 100dvw;
+    position: relative;
+  }
+
+  .exhibition-stjernereisen p,
+  .exhibition-livets-tre p,
+  .exhibition-kroppslabaratoriet p,
+  .exhibition-robolab p,
+  .exhibition-natur-i-balanse p {
+    max-width: 80dvw;
+  }
+  .exhibition-stjernereisen a,
+  .exhibition-livets-tre a,
+  .exhibition-kroppslabaratoriet a,
+  .exhibition-robolab a,
+  .exhibition-natur-i-balanse a {
+    margin: 1rem;
+  }
+}

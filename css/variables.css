@@ -1,0 +1,22 @@
+:root {
+  /* color palette */
+  --fjord-navy: #0c2a3a;
+  --glacier-teal: #0e8775;
+  --aurora-coral: #ff5a5f;
+  --oslo-sky: #eaf3f7;
+  --snow: #ffffff;
+}
+
+/* fonts */
+:root {
+  --font-family-heading: "Baloo 2", sans-serif;
+  --font-family-body: "Lexend Deca", sans-serif;
+
+  --font-size: 16px;
+  --font-weight: 400;
+  --line-height: 1.5;
+  --letter-spacing: 0.01em;
+  --text-transform: none;
+  --text-decoration: none;
+  --text-align: left;
+}

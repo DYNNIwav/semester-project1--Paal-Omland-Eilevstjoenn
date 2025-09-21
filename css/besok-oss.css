@@ -1,0 +1,228 @@
+.besok-oss-container {
+  position: relative;
+  height: 100dvh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text-container {
+  position: relative;
+  margin: 1rem;
+  width: 60dvw;
+  display: flex;
+  flex-direction: column;
+  background-color: color-mix(
+    in srgb,
+    var(--fjord-navy) 100%,
+    transparent 100%
+  );
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+  border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
+}
+.hero-title {
+  position: relative;
+  color: var(--snow);
+  font-size: 4rem;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.hero-subtitle {
+  position: relative;
+  color: var(--snow);
+  font-size: 2rem;
+  font-family: var(--font-family-body);
+  text-align: center;
+  margin: 0;
+}
+
+.hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.besok-oss-info-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80dvw;
+  height: auto;
+  margin-top: 2rem;
+}
+.adresse-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.opening-hours-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.billetter-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.besok-oss-title {
+  position: relative;
+  color: var(--snow);
+  font-size: 2rem;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  text-align: center;
+}
+.adresse-button a {
+  position: relative;
+  color: var(--snow);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-family: var(--font-family-body);
+  line-height: 1.5;
+  display: flex;
+  background-color: var(--aurora-coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  border: 1px solid
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.adresse-button a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  background-color: var(--snow);
+  color: var(--aurora-coral);
+  border: 1px solid color-mix(in srgb, var(--snow) 100%, transparent 100%);
+  box-shadow: 0 0 10px 0 color-mix(in srgb, var(--snow) 100%, transparent 100%);
+}
+
+.besok-oss-text {
+  position: relative;
+  color: var(--snow);
+  font-size: 1rem;
+  font-family: var(--font-family-body);
+  text-align: left;
+  line-height: 2;
+}
+.besok-oss-text a {
+  text-decoration: none;
+}
+.tilgjengelighet-text {
+  position: relative;
+  color: var(--snow);
+  font-size: 1rem;
+  font-family: var(--font-family-body);
+  line-height: 2;
+  text-align: left;
+}
+.fasiliteter-text {
+  position: relative;
+  color: var(--snow);
+  font-size: 1rem;
+  font-family: var(--font-family-body);
+  line-height: 2;
+  text-align: left;
+}
+.tips-text {
+  position: relative;
+  color: var(--snow);
+  font-size: 1rem;
+  font-family: var(--font-family-body);
+  line-height: 2;
+}
+.opening-hours {
+  position: relative;
+  color: var(--snow);
+  font-size: 1rem;
+  font-family: var(--font-family-body);
+  text-align: left;
+  line-height: 2;
+}
+
+.billetter-button-container {
+  position: relative;
+  margin: 1rem;
+}
+.billetter-button {
+  position: relative;
+  color: var(--snow);
+  font-size: 1.2rem;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--aurora-coral);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  border: 1px solid
+    color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.billetter-button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  background-color: var(--snow);
+  color: var(--aurora-coral);
+  border: 1px solid color-mix(in srgb, var(--snow) 100%, transparent 100%);
+  box-shadow: 0 0 10px 0 color-mix(in srgb, var(--snow) 100%, transparent 100%);
+}
+
+@media (max-width: 768px) {
+  .besok-oss-container {
+    height: auto;
+  }
+
+  .hero-text-container {
+    width: 80dvw;
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  .besok-oss-info-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-aspect-ratio: 21/9) {
+  .hero-text-container {
+    width: 30dvw;
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+  .besok-oss-info-container {
+    width: 30dvw;
+  }
+}
