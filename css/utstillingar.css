@@ -10,7 +10,7 @@ html {
 .scroll-arrow-down {
   position: sticky;
   top: 98vh;
-  top: 98dvh;
+  top: 98svh;
   z-index: 100;
   display: flex;
   justify-content: center;
