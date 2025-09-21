@@ -38,14 +38,13 @@ p {
 
 .hero-image {
   width: 100vw;
+  width: 100dvw;
   height: 100vh;
   height: 100dvh;
   object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   z-index: -1;
   animation: blur 5s ease forwards;
 }
