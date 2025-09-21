@@ -4,7 +4,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 .hero-text-container {
   position: relative;
@@ -133,9 +135,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero-container {
-    margin-top: 10rem;
-  }
   .hero-text-container {
     padding: 1rem;
   }

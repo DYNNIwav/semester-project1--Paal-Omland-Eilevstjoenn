@@ -4,12 +4,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60dvh;
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  gap: 1rem;
 }
 
 .hero-text-container {
   position: relative;
-  margin-top: 5rem;
 }
 
 .hero-text {
@@ -29,7 +31,6 @@
   box-shadow: 0 0 10px 0
     color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
   border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
-  margin-bottom: 6rem;
 }
 
 .hero-invitation-text-container {
@@ -46,7 +47,6 @@
   box-shadow: 0 0 10px 0
     color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
   border: 1px solid color-mix(in srgb, var(--fjord-navy) 100%, transparent 100%);
-  margin-bottom: 1rem;
 }
 
 .hero-invitation-text {
@@ -63,13 +63,13 @@
   padding: 1rem 2rem;
   border-radius: 1rem;
   text-decoration: none;
-  margin-top: 10rem;
   transition: all 0.3s ease;
   font-family: var(--font-family-heading);
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
   position: relative;
+  margin-top: 1rem;
   box-shadow: 0 0 10px 0
     color-mix(in srgb, var(--aurora-coral) 100%, transparent 100%);
   border: 1px solid
