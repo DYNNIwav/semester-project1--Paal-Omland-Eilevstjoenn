@@ -24,6 +24,9 @@ const hours = {
     hamburgerMenu.addEventListener('click', () => {
         hamburgerMenu.classList.toggle('open');
             sidebar.classList.toggle('open');
+
+        const isOpen = hamburgerMenu.classList.contains('open');
+        hamburgerMenu.setAttribute('aria-expanded', isOpen);
     });
 });
 
