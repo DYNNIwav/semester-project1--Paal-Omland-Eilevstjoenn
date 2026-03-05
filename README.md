@@ -1,21 +1,46 @@
-# Semester project 1 - Pål Omland Eilevstjønn
+# VitenOslo
 
-## Project overview
+A website for a fictional interactive science museum in Oslo, built as part of the Semester Project 1 course at Noroff. The website targets children aged 7-15 and their parents.
 
-interactive science museum website designed for children aged 7-15 and their parents. The website is built with HTML, CSS and some javascript.
+## Features
 
-## features
+- 5 responsive pages (home, exhibitions, tickets, visit us, maintenance)
+- Modern sidebar navigation with hamburger menu for mobile
+- Glass morphism design inspired by Apple's liquid glass
+- Dynamic display of today's opening hours using JavaScript
+- Content written in Norwegian (Nynorsk) with correct lang attribute
+- Accessible with skip-to-content links and aria labels
+- Image optimization with lazy loading for performance
+- Open Graph meta tags for better SEO and link sharing
 
-- 5 responsive pages for desktop, tablets and mobile
-- showcase for exhibitions
-- optimized images
-- WCAG accessibility
-- SEO optimization
+## Getting Started
 
-## Pages
+### Installation
 
-- home (index.html)
-- exhibitions (utstillingar.html)
-- tickets (billettar.html)
-- visit us (besok-oss.html)
-- added a maintenance page for no broken links. (maintenance.html)
+1. Clone the repo:
+
+```bash
+git clone https://github.com/DYNNIwav/semester-project1--Paal-Omland-Eilevstjoenn.git
+```
+
+2. Open `index.html` in your browser or use Live Server in VS Code.
+
+### Running
+
+No build tools or dependencies needed. The project uses plain HTML, CSS and JavaScript.
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Google Fonts (Baloo 2, Lexend Deca)
+- Font Awesome
+
+## Live Demo
+
+[View the live site here](https://dynniwav.github.io/semester-project1--Paal-Omland-Eilevstjoenn/)
+
+## Author
+
+Pål Omland Eilevstjønn - [GitHub](https://github.com/DYNNIwav)
